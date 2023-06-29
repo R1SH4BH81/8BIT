@@ -162,7 +162,7 @@ root {
   
 }
 .dark-mode .rectangle-6{
-  background-image: radial-gradient(circle, #00f4b3, #0051ff);
+  background-image: radial-gradient(circle, #00f4b37e, #0051ff7a, rgba(102, 0, 255, 0.716));
   border: 0.0925rem solid rgb(255, 255, 255);
   color : lime;
 }
