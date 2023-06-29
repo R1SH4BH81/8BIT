@@ -231,7 +231,18 @@ root {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   animation: fadeIn 0.3s ease-in-out forwards;
 }
+.enlarge-image {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  transition: transform 1s;
+}
 
+.enlarge-image:hover {
+  transform: scale(3.5) ;
+  box-shadow: 0 0 10px 5px rgba(0, 255, 68, 0.764);
+
+}
 @keyframes fadeIn {
   0% {
     opacity: 0;
