@@ -76,7 +76,64 @@ root {
   color: lime;
 
 }
+.notification {
+  position: fixed;
+  top: 50px;
+  left : 80%;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 4px;
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 0.3s, transform 0.3s;
+  
+}
 
+.notification.saved {
+  background-color: #00000044;
+  border: 3px solid rgba(255, 255, 255, 0.434);
+  border-radius: 4px;
+}
+
+.notification.copied {
+  background-color: #00000055;
+  border: 3px solid rgba(255, 255, 255, 0.434);
+  border-radius: 4px;
+}
+
+.notification.uploaded {
+  background-color: #00000045;
+  border: 3px solid rgba(255, 255, 255, 0.434);
+  border-radius: 4px;
+}
+
+.notification.cleared {
+  background-color: #00000044;
+  border: 3px solid rgba(255, 255, 255, 0.434);
+  border-radius: 4px;
+}
+
+
+.notification.show {
+  opacity: 1;
+  transform: translateX(0);
+  transition-delay: 0.2s;
+  animation: notificationFadeOut 3s forwards;
+}
+
+@keyframes notificationFadeOut {
+  0% {
+    opacity: 1;
+    transform: scale(1.1) ;
+  }
+  90% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+}
 .screen {
   max-width: 100%;
   margin: 0 auto;
