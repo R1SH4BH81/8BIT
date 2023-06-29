@@ -76,51 +76,6 @@ root {
   color: lime;
 
 }
-.notification {
-  position: fixed;
-  top: 25px;
-  right: 70px;
-  padding: 10px 20px;
-  color: #fff;
-  border-radius: 4px;
-  opacity: 0;
-  transform: translateX(100%);
-  transition: opacity 0.3s, transform 0.3s;
-}
-
-.notification.saved {
-  background-color: #379ce0;
-}
-
-.notification.copied {
-  background-color: #379ce0;
-}
-
-.notification.uploaded {
-  background-color: #379ce0;
-}
-.notification.cleared {
-  background-color: #379ce0;
-}
-.notification.show {
-  opacity: 1;
-  transform: translateX(0);
-  transition-delay: 0.1s;
-  animation: notificationFadeOut 5s forwards;
-}
-
-@keyframes notificationFadeOut {
-  0% {
-    opacity: 1;
-  }
-  90% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    transform: translateX(100%);
-  }
-}
 
 .screen {
   max-width: 100%;
