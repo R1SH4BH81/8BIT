@@ -32,6 +32,10 @@ function copyCode() {
   document.body.removeChild(textarea);
 
   console.log('Code copied');
+  const notification = document.querySelector('.notification.copied');
+  const notificationClone = notification.cloneNode(true);
+  notificationClone.classList.add('show');
+  document.body.appendChild(notificationClone);
 }
 
 
@@ -88,6 +92,10 @@ function saveCode() {
   document.body.removeChild(link);
 
   console.log('Code saved');
+  const notification = document.querySelector('.notification.saved');
+  const notificationClone = notification.cloneNode(true);
+  notificationClone.classList.add('show');
+  document.body.appendChild(notificationClone);
 }
 
 
@@ -95,6 +103,10 @@ function saveCode() {
 function clearCode() {
   editor.setValue('');
   console.log("Editor cleared");
+  const notification = document.querySelector('.notification.cleared');
+  const notificationClone = notification.cloneNode(true);
+  notificationClone.classList.add('show');
+  document.body.appendChild(notificationClone);
 }
 
 function uploadFile() {
@@ -106,6 +118,10 @@ function uploadFile() {
     console.log('Uploading file:', file);
 
     var reader = new FileReader();
+    const notification = document.querySelector('.notification.uploaded');
+    const notificationClone = notification.cloneNode(true);
+    notificationClone.classList.add('show');
+    document.body.appendChild(notificationClone);
 
     reader.onload = function (e) {
       var fileContent = e.target.result;
