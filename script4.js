@@ -23,7 +23,7 @@ function theme() {
   }
 }
 document.addEventListener('keydown', function(event) {
-  // Check if Alt + W is pressed
+  // Check if Alt + q is pressed
   if (event.altKey && event.key === 'w') {
     changeWallpaper();
   }
