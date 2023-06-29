@@ -1,4 +1,4 @@
-:root {
+root {
   --alto: #ffffff;
   --white: rgb(255, 255, 255);
   --font-size-m: 36px;
@@ -670,7 +670,7 @@
 }
 
 .rectangle:hover {
-  box-shadow: 0 0 7px 7px lime;
+  box-shadow: 0 0 13px 7px lime;
 }
 
 .dark-mode .rectangle-13:hover,
@@ -688,7 +688,7 @@
 }
 
 .dark-mode .rectangle:hover {
-  box-shadow: 0 0 5px 5px rgb(27, 27, 253);
+  box-shadow: 0 0 15px 5px rgb(27, 27, 253);
 }
 
 
