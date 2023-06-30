@@ -204,9 +204,7 @@ root {
   overflow: auto;
   /* Add overflow property to enable scroll bar */
 }
-.rectangle , .rectangle-1-1 , .rectangle-4 , .rectangle-5 , .rectangle-i{
-  border: 1px solid rgba(255, 255, 255, 0.89);
-}
+
 
 @keyframes p9 {
   33% {
