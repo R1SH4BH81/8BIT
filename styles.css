@@ -31,7 +31,7 @@ root {
 }
 
 .rectangle-i:hover {
-  box-shadow: 0 0 17px 7px rgb(255, 3, 3);
+  box-shadow: 0 0 17px 11px rgb(255, 3, 3);
 }
 .rectangle-i:hover img {
   animation: shakeAnimation 0.5s infinite;
@@ -287,7 +287,7 @@ root {
 
 .enlarge-image:hover {
   transform: scale(3.5) ;
-  box-shadow: 0 0 10px 5px rgba(0, 255, 68, 0.764);
+  box-shadow: 0 0 8px 5px rgba(0, 255, 68, 0.764);
 
 }
 @keyframes fadeIn {
@@ -772,46 +772,34 @@ root {
 }
 
 
-.rectangle-13:hover {
-  box-shadow: 0 0 10px 10px rgb(0, 187, 255);
-}
 
-.rectangle-1:hover {
-  box-shadow: 0 0 10px 10px rgb(0, 187, 255);
-}
-
-.rectangle-14:hover {
-  box-shadow: 0 0 10px 10px rgb(0, 187, 255);
-}
-
-.rectangle-5:hover {
-  box-shadow: 0 0 10px 10px rgb(0, 187, 255);
-}
-
+.rectangle-13:hover,
+.rectangle-1:hover,
+.rectangle-14:hover,
+.rectangle-5:hover,
 .rectangle-4:hover {
-  box-shadow: 0 0 10px 10px rgb(0, 187, 255);
+box-shadow: 0 0 17px 12px rgb(255, 157, 0);
 }
-
 .rectangle:hover {
-  box-shadow: 0 0 13px 7px lime;
+  box-shadow: 0 0 13px 9px lime;
 }
 
 .dark-mode .rectangle-13:hover,
 .dark-mode .rectangle-1:hover,
 .dark-mode .rectangle-14:hover {
-  box-shadow: 0 0 10px 10px rgb(55, 255, 0);
+  box-shadow: 0 0 14px 10px rgb(55, 255, 0);
 }
 
 .dark-mode .rectangle-5:hover {
-  box-shadow: 0 0 10px 10px rgba(55, 255, 0);
+  box-shadow: 0 0 14px 10px rgba(55, 255, 0);
 }
 
 .dark-mode .rectangle-4:hover {
-  box-shadow: 0 0 10px 10px rgba(55, 255, 0);
+  box-shadow: 0 0 14px 10px rgba(55, 255, 0);
 }
 
 .dark-mode .rectangle:hover {
-  box-shadow: 0 0 15px 5px rgb(27, 27, 253);
+  box-shadow: 0 0 11px 5px rgb(27, 27, 253);
 }
 
 
