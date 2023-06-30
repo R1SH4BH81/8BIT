@@ -4,7 +4,9 @@ root {
   --font-size-m: 36px;
   --font-family-inter: "Inter";
 }
-
+.rectangle , .rectangle-1-1 , .rectangle-4 , .rectangle-5 , .rectangle-i{
+  border: 1px solid rgba(255, 255, 255, 0.89);
+}
 .rectangle img {
   width: 100%;
   height: 100%;
