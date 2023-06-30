@@ -96,21 +96,21 @@
         <div class="flex-row flex">
             <div class="rectangle-1-1"> <button onclick="showMessageBox()"
                     style="background-color: rgba(255, 255, 255, 0.092);"><i class="fas fa-info-circle"
-                        style="color: white;"></i></button>
+                        ></i></button>
             </div>
             <div class="rectangle-1-1"> <button onclick="openChatWindow()"
                     style="background-color: rgba(255, 255, 255, 0.092);"><i class="fas fa-comment"
-                        style="color: white;" title="Ask Chat Gpt"></i></button>
+                         title="Ask Chat Gpt"></i></button>
             </div>
 
 
             <div class="rectangle-1-1"> <button onclick="window.location.href = 'login.html';"
                     style="background-color: rgba(255, 255, 255, 0.092);"><i class="fas fa-user" title="Login "
-                        style="color: white;"></i></button></div>
+                        ></i></button></div>
 
             <div class="rectangle-1-1"> <button onclick="leader()"
                     style="background-color: rgba(255, 255, 255, 0.092);"><i class="fas fa-trophy"
-                        style="color: white;"></i></button></div>
+                        ></i></button></div>
             <div class="overlay" id="overlay" style="display: none;">
                 <div class="message-box">
                     <h2>Info</h2>
@@ -141,15 +141,15 @@
         </div>
         <div class="flex-row-1">
             <div class="rectangle" onclick="copyCode()"><i class="fas fa-copy" title="Copy/F8"
-                    style="color: white;"></i></div>
+                    ></i></div>
 
             <div class="rectangle" id="console-viewer-toggle" onclick="showConsoleMessagesAndFloat();">
-        <i class="fas fa-terminal" title="Console" style="color: white;"></i><div class="console-viewer" id="console-viewer">
+        <i class="fas fa-terminal" title="Console" ></i><div class="console-viewer" id="console-viewer">
           <h2 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Console Viewer</h2>
           <div id="console-output"></div>
         </div>
       </div>
-            <div class="rectangle" onclick="saveCode()"><i class="fas fa-save" title="Save/F9" style="color: white"></i>
+            <div class="rectangle" onclick="saveCode()"><i class="fas fa-save" title="Save/F9" ></i>
             </div>
                  <div class="rectangle-i" onclick="clearCode()"><img src="https://icon-library.com/images/delete-icon-png/delete-icon-png-19.jpg" style="height: 25px; width: 25px;" title="Clear Code/F12"></div>
         </div>
@@ -166,7 +166,7 @@ int main() {
                             style="background-color: rgba(255, 255, 255, 0);resize: none; width: 650px; border-color: rgba(255, 255, 255, 0);"></textarea><textarea
                             class="textbox rectangle-3" id="outputTextarea"
                             style="margin-top:28px;height: 450px;resize:horizontal;overflow: auto;"
-                            placeholder="I am a horizontally resizable area"></textarea></div>
+                            placeholder="I am a horizontally resizable area">Hi from 8Bit</textarea></div>
             <!-- dont remove the above script tag from here-->
             <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.23.0/ace.js"
                 integrity="sha512-+jESSLfWnLFLB0xrEnlj3yESiiuuuOnVDcq+HXImWWCB5CBqAnVsmtIZ5GtrNMH0C6gPZoj6n14zJ0iwGYoswQ=="
@@ -186,11 +186,11 @@ int main() {
             </script>
             <div class="flex-row-2">
                 <div class="rectangle-4" onclick="runCode()"><i class="fas fa-play" title="Run code/F5"
-                        style="color: white;"></i></div>
+                        ></i></div>
 
 
                 <div class="rectangle-5" onclick="uploadFile()"><i class="fas fa-folder-open"
-                        title="Upload file from Folder" style="color: rgb(255, 255, 255);"></i></div>
+                        title="Upload file from Folder" ></i></div>
                 <div class="rectangle-5" onclick="theme()"><img alt="theme-icon" id="theme-icon" title="Switch to dark mode" src="moon.png" style="height: 30px; width: 30px;"></i></div>
           
                 <textarea class="textbox rectangle-6" id="myTextarea" onfocus="clearTextarea(this)"
