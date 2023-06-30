@@ -61,7 +61,8 @@ root {
   height: 2.6875rem;
   width: 5.0625rem;
   border: 2px solid white;
-  
+  font-family: Bungee ;
+  font-weight: bold;
   border-radius: 10px;
   
 }
