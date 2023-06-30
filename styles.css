@@ -55,6 +55,22 @@ root {
   100% { transform: translateX(0) rotate(5deg); }
 }
 
+.rectangle-4 button {
+  background-color: rgba(0, 0, 0, 0.197);
+  color: white;
+  height: 2.6875rem;
+  width: 5.0625rem;
+  border: 2px solid white;
+  
+  border-radius: 10px;
+  
+}
+.dark-mode .rectangle-4 button{
+  color: lime;
+  border: 2px solid lime;
+  background-color: rgba(255, 255, 255, 0.197);
+
+}
 .console-viewer {
   position: fixed;
   bottom: 200px; /* Adjust the initial position as needed */
