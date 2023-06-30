@@ -26,7 +26,7 @@ root {
   align-items: center;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.197);
-  border: 0.0925rem solid rgba(255, 251, 251, 0.589);
+  border: 1px solid rgba(0, 0, 0, 0.38);
   /* Equivalent to 1px */
 }
 .rectangle-i:hover {
@@ -54,6 +54,68 @@ root {
   100% { transform: translateX(0) rotate(5deg); }
 }
 
+.dark-mode .rectangle-1-1{
+  border: 0.1rem solid rgba(0, 255, 0, 0.84);
+}
+.dark-mode .rectangle{
+  border: 2px solid rgba(0, 255, 0, 0.84);
+}
+.dark-mode .rectangle-i{
+  border: 2px solid rgba(255, 0, 0, 0.93);
+}
+.dark-mode .rectangle-4{
+  border: 2px solid rgba(0, 255, 0, 0.84);
+}
+.dark-mode .rectangle-5{
+  border: 2px solid rgba(0, 255, 0, 0.84);
+}
+.dark-mode .fa-folder-open{  color : white;
+}
+.dark-mode .fa-play {
+  color: white;
+  /* Additional styles for fa-play in dark mode */
+}
+
+.dark-mode .fa-save {
+  color: white;
+  /* Additional styles for fa-save in dark mode */
+}
+
+.dark-mode .fa-copy {
+  color: white;
+  /* Additional styles for fa-copy in dark mode */
+}
+
+.dark-mode .fa-terminal {
+  color: white;
+  /* Additional styles for fa-terminal in dark mode */
+}
+
+.dark-mode .fa-info-circle {
+  color: white;
+  /* Additional styles for fa-info-circle in dark mode */
+}
+
+.dark-mode .fa-comment {
+  color: white;
+  /* Additional styles for fa-comment in dark mode */
+}
+
+.dark-mode .fa-user {
+  color: white;
+  /* Additional styles for fa-user in dark mode */
+}
+
+.dark-mode .fa-trophy {
+  color: white;
+  /* Additional styles for fa-trophy in dark mode */
+}
+#outputTextarea{
+  color: black;
+}
+.dark-mode #outputTextarea{
+  color: lime;
+}
 .console-viewer {
   position: fixed;
   bottom: 200px; /* Adjust the initial position as needed */
@@ -435,7 +497,7 @@ root {
   align-items: center;
   transition: box-shadow 0.6s ease-in-out;
   background-color: rgba(0, 0, 0, 0.226);
-  border: 0.0625rem solid rgba(255, 255, 255, 0.589);
+  border: 1px solid rgba(0, 0, 0, 0.38);
 }
 
 .symbol-container {
@@ -574,7 +636,7 @@ root {
   align-items: center;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.197);
-  border: 0.0925rem solid rgba(255, 251, 251, 0.589);
+  border: 1px solid rgba(0, 0, 0, 0.38);
   /* Equivalent to 1px */
 }
 
@@ -624,7 +686,7 @@ root {
   align-items: center;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.197);
-  border: 0.0625rem solid rgba(255, 251, 251, 0.589);
+  border: 1px solid rgba(0, 0, 0, 0.38);
 }
 
 .rectangle-5 {
@@ -641,7 +703,7 @@ root {
   align-items: center;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.197);
-  border: 0.0625rem solid rgba(255, 251, 251, 0.589);
+  border: 1px solid rgba(0, 0, 0, 0.38);
 }
 
 .rectangle-2 {
