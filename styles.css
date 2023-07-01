@@ -175,11 +175,11 @@ root {
     transform: scale(1.1) ;
   }
   90% {
-    opacity: 0.5;
+    opacity: 0.7;
   }
   100% {
     opacity: 0;
-    transform: translateY(-100%);
+    transform: scale(1) ;
   }
 }
 .screen {
