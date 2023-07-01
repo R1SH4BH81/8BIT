@@ -126,7 +126,7 @@ root {
 }
 .notification {
   position: fixed;
-  top: 50px;
+  top: 60px;
   left : 80%;
   padding: 10px 20px;
   color: #fff;
