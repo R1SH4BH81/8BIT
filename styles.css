@@ -11,6 +11,36 @@ root {
   object-fit: cover;
   transition: transform 0.3s;
 }
+.hot-glow {
+  animation: hot-glow-animation 2s infinite;
+}
+
+@keyframes hot-glow-animation {
+  0% {
+      box-shadow: 0 0 2px 5px rgba(255, 255, 255, 0);
+  }
+  50% {
+      box-shadow: 0 0 2px 5px #FF5E0E;
+  }
+  100% {
+      box-shadow: 0 1 2px 5px #FF5E0E;
+  }
+}
+.dark-mode .hot-glow {
+  animation: hot-glow-animation-dark 2s infinite;
+}
+
+@keyframes hot-glow-animation-dark {
+  0% {
+      box-shadow: 0 0 2px 5px rgba(0, 0, 0, 0);
+  }
+  50% {
+      box-shadow: 0 0 2px 5px lime;
+  }
+  100% {
+      box-shadow: 0 1 2px 5px lime;
+  }
+}
 .rectangle-i {
   background-color: var(--white);
   border-radius: 0.75rem;
