@@ -80,7 +80,7 @@ function showConsoleMessagesAndFloat() {
 console.log("hi from 8bit")
  const states = {
     idle: '<i class="fas fa-play"></i>',
-    sending: '<img aria-hidden="true" width="24" height="24" src="https://assets.codepen.io/2585/ring-resize.svg" alt="" />',
+    sending: '<img aria-hidden="true" width="24" height="24" src="https://assets.codepen.io/2585/ring-resize.svg" alt="Executing" />',
     done: 'Done !',
   }
   
