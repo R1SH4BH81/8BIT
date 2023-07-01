@@ -973,9 +973,9 @@ a {
     flex-direction: column;
     gap: 12.25rem;
     /* Equivalent to 148px */
-    margin-left: 0.01rem;
+    margin-left: -5.01rem;
     /* Equivalent to 11px */
-    margin-top: 0.1rem;
+    margin-top: -3.1rem;
     /* Equivalent to 16px */
     height: 18.75rem;
     /* Equivalent to 300px */
@@ -1043,20 +1043,10 @@ a {
     background-image: url("https://th.bing.com/th/id/OIP.ezTcvZxUya5hipRNHxDFEwHaEK?pid=ImgDet&rs=1");
     background-size: cover;
 
-
-
-    backdrop-filter: blur(10px);
-
-    display: flex;
-
-
   }
 
-
-
-
-
 }
+
 
 @media (min-width: 1157px) and (max-width: 2440px) {
 
