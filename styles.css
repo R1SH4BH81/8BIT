@@ -862,67 +862,20 @@ a {
 
 
 
-/* Media query for 768px to 1028px */
-@media (min-width: 767px) and (max-width: 1023px) {
-  .rectangle-2 {
-    background-color: rgba(255, 255, 255, 0.4);
-    border-radius: 0.75rem;
-    /* Equivalent to 12px */
-    height: 31.25rem;
-    /* Equivalent to 500px */
-    margin-top: 5.25rem;
-    /* Equivalent to 18px */
-    width: 25rem;
-    /* Equivalent to 400px */
-    margin-right: 1.25rem;
-    /* Equivalent to 20px */
-    flex: 1;
-  }
+@media (min-width: 768px) and (max-width: 1024px) {
+
+
 
   .textboxes-container {
     display: flex;
     flex-direction: column;
   }
 
-  .loader-container {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 9999;
-  }
-
-  .loader {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border: 16px solid #f3f3f3;
-    border-top: 16px solid #3498db;
-    border-radius: 50%;
-    width: 120px;
-    height: 120px;
-    animation: spin 2s linear infinite;
-  }
-
-  @keyframes spin {
-    0% {
-      transform: translate(-50%, -50%) rotate(0deg);
-    }
-
-    100% {
-      transform: translate(-50%, -50%) rotate(360deg);
-    }
-  }
-
   .flex-col {
     flex-direction: column;
-    gap: 9.25rem;
+    gap: 15.25rem;
     /* Equivalent to 148px */
-    margin-left: 0.01rem;
+    margin-left: -5.01rem;
     /* Equivalent to 11px */
     margin-top: 0.1rem;
     /* Equivalent to 16px */
@@ -933,17 +886,17 @@ a {
   }
 
   .rectangle-3 {
-    background-color: rgba(255, 255, 255, 0.125);
+    background-color: rgba(255, 255, 255, 0.126);
     border-radius: 1.5625rem;
     /* Equivalent to 25px */
     height: 31.25rem;
     /* Equivalent to 500px */
     margin-top: 5.125rem;
     /* Equivalent to 18px */
-    width: 15.625rem;
-    border: 0.0625rem solid rgba(0, 0, 0, 0.8);
-    color: lime;
+    width: 20.625rem;
     /* Equivalent to 250px */
+    margin-right: 1px;
+    color: lime;
   }
 
 
@@ -954,10 +907,10 @@ a {
     /* Equivalent to 32px */
     margin-left: 1.125rem;
     /* Equivalent to 18px */
-    width: 20.5rem;
+    width: 25.5rem;
+    border: 0.0625rem solid rgba(0, 0, 0, 0.8);
     /* Equivalent to 400px */
     height: 4.6875rem;
-    border: 0.0625rem solid rgba(0, 0, 0, 0.8);
     /* Equivalent to 75px */
     background-color: rgba(255, 255, 255, 0.4);
   }
@@ -987,6 +940,24 @@ a {
     min-width: 25.625rem;
     /* Equivalent to 405px */
   }
+
+  .desktop-1 {
+    background-image: url("https://th.bing.com/th/id/OIP.ezTcvZxUya5hipRNHxDFEwHaEK?pid=ImgDet&rs=1");
+    background-size: cover;
+
+
+
+    backdrop-filter: blur(10px);
+
+    display: flex;
+
+
+  }
+
+
+
+
+
 }
 
 @media (min-width: 1024px) and (max-width: 1156px) {
