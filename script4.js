@@ -1,11 +1,13 @@
 window.addEventListener('load', function() {
   var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
   var isMobileDevice = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+  var isTabletDevice = /Tablet|iPad/i.test(navigator.userAgent); // Check for tablet device
 
-  if (screenWidth < 960 || isMobileDevice) {
+  if (screenWidth < 768 || isMobileDevice || !isTabletDevice) {
     window.location.href = 'restricted.html';
   }
 });
+
 function theme() {
   const body = document.body;
   const themeIcon = document.getElementById('theme-icon');
