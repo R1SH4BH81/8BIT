@@ -798,7 +798,7 @@ root {
 box-shadow: 0 0 17px 12px rgb(255, 157, 0);
 }
 .rectangle:hover {
-  box-shadow: 0 0 13px 9px lime;
+  box-shadow: 0 0 13px 9px orange;
 }
 
 .dark-mode .rectangle-13:hover,
