@@ -10,7 +10,7 @@ sweetAlertStylesheet.href = 'https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/di
 document.head.appendChild(sweetAlertStylesheet);
 
 function checkSessionExpiration() {
-  var sessionTimeout = 30 * 60 * 1000; // 30 minutes in milliseconds
+  var sessionTimeout = 1 * 60 * 1000; 
   var lastActivity = parseInt(localStorage.getItem('lastActivity'));
   var currentTime = Date.now();
 
