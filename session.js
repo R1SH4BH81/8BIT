@@ -24,10 +24,11 @@ function checkSessionExpiration() {
         text: 'Your session has expired. Please log in again.',
         showCancelButton: false,
         showConfirmButton: true,
-        confirmButtonText: 'OK'
-      }).then(function(result) {
-        // Check if the user clicked the "OK" button
-        if (result.isConfirmed) {
+        confirmButtonText: 'OK',
+        allowOutsideClick: false,
+        allowEscapeKey: false,
+        allowEnterKey: false,
+        willClose: function() {
           // Set sessionExpired flag in local storage to indicate the notification has been shown
           localStorage.setItem('sessionExpired', 'true');
           // Redirect the user to the login page
