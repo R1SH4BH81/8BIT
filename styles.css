@@ -14,6 +14,9 @@ root {
 .hot-glow {
   animation: hot-glow-animation 2s infinite;
 }
+.fa-envelope{
+    color: white;
+  }
 
 
 @keyframes hot-glow-animation {
@@ -66,7 +69,20 @@ root {
 
 
 .rectangle-f:hover {
-  box-shadow: 0 0 15px 11px #C13584
+  animation: Color 1s infinite;
+}
+
+@keyframes Color {
+  0% {
+    box-shadow: 0 0 15px 11px #833AB4;
+  }
+  30%{
+    box-shadow: 0 0 15px 11px #C13584;
+  }
+  
+  100% {
+    box-shadow: 0 0 15px 11px #833AB4;
+  }
 }
 .fa-instagram {
   font-size: 24px;
