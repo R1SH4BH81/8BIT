@@ -60,3 +60,47 @@ function leader() {
     confirmButtonText: 'OK',
   });
       }
+
+
+
+function reportError() {
+        // Email details
+        var recipient = 'rishabh.mishra4@s.amity.edu';
+        var subject = 'Error Report';
+        var body = 'Please describe the error you encountered:';
+  
+        // Create a mailto link
+        var mailtoLink = 'mailto:' + recipient + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+  
+        // Open the user's default email client
+        window.location.href = mailtoLink;
+      }
+    
+      function openFacebookFeed() {
+        // Pre-written text
+        var text = 'Check out this awesome online compiler " 8BIT " at compiler81.netlify.app #AwesomeWebsite';
+  
+        // Create a Facebook URL with pre-written text
+        var facebookUrl = 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(text);
+  
+        // Open the Facebook feed in a new window with 800x800 size
+        window.open(facebookUrl, 'facebook', 'width=800,height=800');
+      }
+  
+      function openInstagramProfile() {
+        // Your Instagram profile URL
+        var instagramUrl = 'https://www.instagram.com/webwise_media';
+  
+        // Open your Instagram profile in a new window with 800x800 size
+        window.open(instagramUrl, 'instagram', 'width=800,height=800');
+      }
+  function openTwitterFeed() {
+      // Pre-written text
+      var text = 'Check out this awesome online compiler " 8BIT " at compiler81.netlify.app #AwesomeWebsite';
+
+      // Create a Twitter URL with pre-written text
+      var twitterUrl = 'https://twitter.com/intent/tweet?text=' + encodeURIComponent(text);
+
+      // Open the Twitter feed in a new window with 800x800 size
+      window.open(twitterUrl, 'twitter', 'width=800,height=800');
+    }
