@@ -99,7 +99,7 @@ root {
 }
 .rectangle-i {
   background-color: var(--white);
-  border-radius: 0.75rem;
+  border-radius: 5.75rem;
   /* Equivalent to 12px */
   height: 2.6875rem;
   /* Equivalent to 43px */
@@ -699,7 +699,7 @@ root {
 
 .rectangle {
   background-color: var(--white);
-  border-radius: 0.75rem;
+  border-radius: 5.75rem;
   /* Equivalent to 12px */
   height: 2.6875rem;
   /* Equivalent to 43px */
@@ -750,7 +750,7 @@ root {
 
 .rectangle-4 {
   background-color: var(--white);
-  border-radius: 0.75rem;
+  border-radius: 3.75rem;
   /* Equivalent to 12px */
   height: 2.6875rem;
   /* Equivalent to 43px */
@@ -767,7 +767,7 @@ root {
 
 .rectangle-5 {
   background-color: var(--white);
-  border-radius: 0.75rem;
+  border-radius: 3.75rem;
   /* Equivalent to 12px */
   height: 2.6875rem;
   /* Equivalent to 43px */
