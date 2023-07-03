@@ -15,6 +15,7 @@ root {
   animation: hot-glow-animation 2s infinite;
 }
 
+
 @keyframes hot-glow-animation {
   0% {
       box-shadow: 0 0 2px 5px rgba(255, 255, 255, 0);
@@ -73,6 +74,12 @@ root {
 
 .dark-mode .fa-instagram {
   color: #833AB4
+}
+.fa-instagram {
+  color: white
+}
+.fa-twitter{
+  color : white;
 }
 .rectangle-i {
   background-color: var(--white);
