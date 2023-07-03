@@ -973,6 +973,10 @@ box-shadow: 0 0 17px 12px rgb(255, 157, 0);
   margin-left: 75px;
 }
 
+#outputTextarea{
+ height: 450px;
+ margin-top: 30px;
+}
 
 
 .pair {
@@ -998,9 +1002,7 @@ a {
 
 
 
-
-
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1023px) {
 
 
 
@@ -1075,11 +1077,21 @@ a {
     display: flex;
     gap: 0.3125rem;
     /* Equivalent to 5px */
-    margin-right: -3.3125rem;
+    margin-right: 1.3125rem;
     /* Equivalent to 5px */
 
     min-width: 25.625rem;
     /* Equivalent to 405px */
+  }
+
+  .custom-textarea {
+    background-color: rgba(255, 255, 255, 0);
+    resize: none;
+    height: 200px;
+    margin-top: 250px;
+    width: 510px;
+    margin-left:60px;
+    
   }
 
   .desktop-1 {
@@ -1094,6 +1106,10 @@ a {
 
 
   }
+  #editor{
+    width : 495px;
+    margin-left:65px;
+  }
 
 
 
@@ -1103,7 +1119,10 @@ a {
 
 @media (min-width: 1024px) and (max-width: 1156px) {
 
-
+  #editor{
+    margin-right: -50px;
+    width : 590px;
+  }
 
   .textboxes-container {
     display: flex;
@@ -1112,7 +1131,14 @@ a {
    .fa-envelope{
     color: white;
   }
-
+  .custom-textarea {
+    background-color: rgba(255, 255, 255, 0);
+    resize: none;
+    height: 200px;
+    margin-top: 250px;
+    width: 600px;
+    border-color: rgba(255, 255, 255, 0);
+  }
 
   .flex-col {
     flex-direction: column;
@@ -1177,7 +1203,7 @@ a {
     display: flex;
     gap: 0.3125rem;
     /* Equivalent to 5px */
-    margin-right: -3.3125rem;
+    margin-right: 0.3125rem;
     /* Equivalent to 5px */
 
     min-width: 25.625rem;
@@ -1193,7 +1219,7 @@ a {
 }
 
 
-@media (min-width: 1157px) and (max-width: 2440px) {
+@media (min-width: 1157px) and (max-width: 1500px) {
 
 
   .rectangle-2 {
@@ -1286,4 +1312,301 @@ a {
     min-width: 25.625rem;
     /* Equivalent to 405px */
   }
+}
+@media (min-width: 1501px) and (max-width: 1700px){
+
+  .textboxes-container {
+    display: flex;
+    flex-direction: column;
+  }
+   .fa-envelope{
+    color: white;
+  }
+  .custom-textarea {
+    background-color: rgba(255, 255, 255, 0);
+    resize: none;
+    height: 200px;
+    margin-top: 250px;
+    width: 795px;
+    border-color: rgba(255, 255, 255, 0);
+  }
+
+  .flex-col {
+    flex-direction: column;
+    gap: 12.25rem;
+    /* Equivalent to 148px */
+    margin-left: -5.01rem;
+    /* Equivalent to 11px */
+    margin-top: -3.1rem;
+    /* Equivalent to 16px */
+    height: 18.75rem;
+    /* Equivalent to 300px */
+    width: 14.75rem;
+    /* Equivalent to 236px */
+  }
+  
+#outputTextarea{
+  height: 450px;
+  margin-right: 30px;
+  width: 700px;
+ }
+#editor{
+  width:790px ;
+}
+
+  .rectangle-3 {
+    background-color: rgba(255, 255, 255, 0.126);
+    border-radius: 1.5625rem;
+    /* Equivalent to 25px */
+    height: 31.25rem;
+    /* Equivalent to 500px */
+    margin-top: 5.125rem;
+    /* Equivalent to 18px */
+    width: 20.625rem;
+    /* Equivalent to 250px */
+    margin-right: 1px;
+    color: lime;
+  }
+
+
+  .rectangle-6 {
+    border-radius: 0.75rem;
+    /* Equivalent to 12px */
+    height: 2rem;
+    /* Equivalent to 32px */
+    margin-left: 1.125rem;
+    /* Equivalent to 18px */
+    width: 20.5rem;
+    border: 0.0625rem solid rgba(0, 0, 0, 0.8);
+    /* Equivalent to 400px */
+    height: 4.6875rem;
+    /* Equivalent to 75px */
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+
+  .flex-row-2 {
+    align-self: center;
+    display: flex;
+    margin-top: 1.125rem;
+    /* Equivalent to 18px */
+    min-width: 12.5rem;
+    /* Equivalent to 200px */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5625rem;
+    /* Equivalent to 25px */
+  }
+
+  .flex-row-1 {
+    align-items: center;
+    display: flex;
+    gap: 0.3125rem;
+    /* Equivalent to 5px */
+    margin-right: -3.3125rem;
+    /* Equivalent to 5px */
+
+    min-width: 25.625rem;
+    /* Equivalent to 405px */
+  }
+  
+
+}
+@media (min-width: 1701px) and (max-width : 1900px){
+
+  .textboxes-container {
+    display: flex;
+    flex-direction: column;
+  }
+   .fa-envelope{
+    color: white;
+  }
+  .custom-textarea {
+    background-color: rgba(255, 255, 255, 0);
+    resize: none;
+    height: 200px;
+    margin-top: 250px;
+    width: 795px;
+    border-color: rgba(255, 255, 255, 0);
+  }
+
+  .flex-col {
+    flex-direction: column;
+    gap: 12.25rem;
+    /* Equivalent to 148px */
+    margin-left: 20.01rem;
+    /* Equivalent to 11px */
+    margin-top: 3.1rem;
+    /* Equivalent to 16px */
+    height: 18.75rem;
+    /* Equivalent to 300px */
+    width: 14.75rem;
+    /* Equivalent to 236px */
+  }
+  
+#outputTextarea{
+  height: 450px;
+  margin-right: 30px;
+  width: 700px;
+ }
+#editor{
+  width:790px ;
+}
+
+  .rectangle-3 {
+    background-color: rgba(255, 255, 255, 0.126);
+    border-radius: 1.5625rem;
+    /* Equivalent to 25px */
+    height: 31.25rem;
+    /* Equivalent to 500px */
+    margin-top: 5.125rem;
+    /* Equivalent to 18px */
+    width: 20.625rem;
+    /* Equivalent to 250px */
+    margin-right: 1px;
+    color: lime;
+  }
+
+
+  .rectangle-6 {
+    border-radius: 0.75rem;
+    /* Equivalent to 12px */
+    height: 2rem;
+    /* Equivalent to 32px */
+    margin-left: 1.125rem;
+    /* Equivalent to 18px */
+    width: 20.5rem;
+    border: 0.0625rem solid rgba(0, 0, 0, 0.8);
+    /* Equivalent to 400px */
+    height: 4.6875rem;
+    /* Equivalent to 75px */
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+
+  .flex-row-2 {
+    align-self: center;
+    display: flex;
+    margin-top: 1.125rem;
+    /* Equivalent to 18px */
+    min-width: 12.5rem;
+    /* Equivalent to 200px */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5625rem;
+    /* Equivalent to 25px */
+  }
+
+  .flex-row-1 {
+    align-items: center;
+    display: flex;
+    gap: 0.3125rem;
+    /* Equivalent to 5px */
+    margin-right: -3.3125rem;
+    /* Equivalent to 5px */
+
+    min-width: 25.625rem;
+    /* Equivalent to 405px */
+  }
+  
+
+}
+@media  (min-width : 1901px){
+
+  .textboxes-container {
+    display: flex;
+    flex-direction: column;
+  }
+   .fa-envelope{
+    color: white;
+  }
+  .custom-textarea {
+    background-color: rgba(255, 255, 255, 0);
+    resize: none;
+    height: 200px;
+    margin-top: 250px;
+    width: 1500px;
+    border-color: rgba(255, 255, 255, 0);
+  }
+
+  .flex-col {
+    flex-direction: column;
+    gap: 12.25rem;
+    /* Equivalent to 148px */
+    margin-left: 15.01rem;
+    /* Equivalent to 11px */
+    margin-top: 5.1rem;
+    /* Equivalent to 16px */
+    height: 18.75rem;
+    /* Equivalent to 300px */
+    width: 14.75rem;
+    /* Equivalent to 236px */
+  }
+  
+#outputTextarea{
+  height: 200px;
+  margin-right: 30px;
+  width: 700px;
+ }
+#editor{
+  width:1490px ;
+}
+
+  .rectangle-3 {
+    background-color: rgba(255, 255, 255, 0.126);
+    border-radius: 1.5625rem;
+    /* Equivalent to 25px */
+    height: 31.25rem;
+    /* Equivalent to 500px */
+    margin-top: 5.125rem;
+    /* Equivalent to 18px */
+    width: 20.625rem;
+    /* Equivalent to 250px */
+    margin-right: 1px;
+    color: lime;
+  }
+
+
+  .rectangle-6 {
+    border-radius: 0.75rem;
+    /* Equivalent to 12px */
+    height: 2rem;
+    /* Equivalent to 32px */
+    margin-left: 1.125rem;
+    /* Equivalent to 18px */
+    width: 20.5rem;
+    border: 0.0625rem solid rgba(0, 0, 0, 0.8);
+    /* Equivalent to 400px */
+    height: 4.6875rem;
+    /* Equivalent to 75px */
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+
+  .flex-row-2 {
+    align-self: center;
+    display: flex;
+    margin-top: 1.125rem;
+    /* Equivalent to 18px */
+    min-width: 12.5rem;
+    /* Equivalent to 200px */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5625rem;
+    /* Equivalent to 25px */
+  }
+
+  .flex-row-1 {
+    align-items: center;
+    display: flex;
+    gap: 0.3125rem;
+    /* Equivalent to 5px */
+    margin-right: -3.3125rem;
+    /* Equivalent to 5px */
+
+    min-width: 25.625rem;
+    /* Equivalent to 405px */
+  }
+  
+
 }
