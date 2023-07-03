@@ -65,7 +65,7 @@ function leader() {
 
 function reportError() {
         // Email details
-        var recipient = 'rishabh.mishra4@s.amity.edu';
+        var recipient = 'rishabhmishra.81e@gmail.com';
         var subject = 'Error Report';
         var body = 'Please describe the error you encountered:';
   
