@@ -114,7 +114,7 @@ root {
   border: 0.0925rem solid lime;
 }
 .rectangle-m:hover {
-  box-shadow: 0 0 12px 11px rgb(255, 3, 3);
+  box-shadow: 0 0 12px 11px lime;
 }
 .rectangle-i:hover {
   box-shadow: 0 0 17px 11px rgb(255, 3, 3);
