@@ -134,10 +134,10 @@ root {
   /* Equivalent to 1px */
 }
 .dark-mode .rectangle-m{
-  border: 0.0925rem solid lime;
+  border: 0.0925rem solid yellow;
 }
 .rectangle-m:hover {
-  box-shadow: 0 0 12px 11px lime;
+  box-shadow: 0 0 12px 11px yellow;
 }
 .rectangle-i:hover {
   box-shadow: 0 0 17px 11px rgb(255, 3, 3);
