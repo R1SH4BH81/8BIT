@@ -1018,11 +1018,11 @@ a {
   }
   .custom-textarea{
     height: 10px;
-    width: 500px;
+    width: 480px;
    
   }
   #editor{
-    width: 500px;
+    width: 478px;
   }
 
   .flex-col {
@@ -1061,7 +1061,7 @@ a {
     /* Equivalent to 32px */
     margin-left: 1.125rem;
     /* Equivalent to 18px */
-    width: 20.5rem;
+    width: 10.5rem;
     border: 0.0625rem solid rgba(0, 0, 0, 0.8);
     /* Equivalent to 400px */
     height: 4.6875rem;
