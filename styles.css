@@ -1093,6 +1093,9 @@ a {
     margin-left:60px;
     
   }
+  #editor{
+    width:500px;
+  }
 
   .desktop-1 {
     background-image: url("https://th.bing.com/th/id/OIP.ezTcvZxUya5hipRNHxDFEwHaEK?pid=ImgDet&rs=1");
