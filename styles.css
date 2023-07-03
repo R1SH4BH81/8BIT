@@ -59,7 +59,30 @@ root {
   border: 0.0925rem solid rgba(255, 251, 251, 0.589);
   /* Equivalent to 1px */
 }
-
+.rectangle-m {
+  background-color: var(--white);
+  border-radius: 20.75rem;
+  /* Equivalent to 12px */
+  height: 2.6875rem;
+  /* Equivalent to 43px */
+  margin-top: 1%;
+  width: 3rem;
+  /* Equivalent to 81px */
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.197);
+  border: 0.0925rem solid rgba(255, 251, 251, 0.633);
+  /* Equivalent to 1px */
+}
+.dark-mode .rectangle-m{
+  border: 0.0925rem solid rgba(255, 1, 1, 0.655);
+}
+.rectangle-m:hover {
+  box-shadow: 0 0 12px 11px rgb(255, 3, 3);
+}
 .rectangle-i:hover {
   box-shadow: 0 0 17px 11px rgb(255, 3, 3);
 }
