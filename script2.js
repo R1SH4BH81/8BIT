@@ -104,3 +104,18 @@ function reportError() {
       // Open the Twitter feed in a new window with 800x800 size
       window.open(twitterUrl, 'twitter', 'width=800,height=800');
     }
+function openLoginWindow() {
+      var chatWindow = window.open("login.html", "_blank", "width=500,height=650");
+      if (chatWindow) {
+        console.log("Login opened");
+      } else {
+        console.log("Failed to open Login Page");
+        Swal.fire({
+          icon: 'warning',
+          title: 'Attention',
+          text: 'Failed to open Login Page.',
+          confirmButtonColor: '#3085d6',
+          confirmButtonText: 'OK',
+        });
+      }
+    }
