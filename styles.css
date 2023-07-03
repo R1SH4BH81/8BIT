@@ -992,6 +992,9 @@ a {
     display: flex;
     flex-direction: column;
   }
+   .fa-envelope{
+    color: white;
+  }
 
   .flex-col {
     flex-direction: column;
@@ -1090,6 +1093,10 @@ a {
     display: flex;
     flex-direction: column;
   }
+   .fa-envelope{
+    color: white;
+  }
+
 
   .flex-col {
     flex-direction: column;
