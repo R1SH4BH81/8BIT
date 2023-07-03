@@ -63,11 +63,11 @@
     <div class="desktop-1 screen">
         <div class="flex-col flex">
 
-            <h1 class="title" data-bss-hover-animate="bounce"><img src="logo.png" title="8BIT_logo"></h1>
+            <h1 class="title" ><img src="logo.png" title="8BIT_logo"></h1>
 
             <div class="overlap-group">
                 <a href="index.html">
-                    <div class="rectangle-14">
+                    <div class="rectangle-14" title="Python">
                         <img src="py.png" width="50px" height="50px" title="Python">
                 </a>
             </div>
@@ -77,21 +77,21 @@
                     <img src="javas.png" width="75px" height="40px">
             </a>
         </div>-->
-            <a href="java.html">
-                <div class="rectangle-1">
+            <a href="java.html" title="Java">
+                <div class="rectangle-1" title="Java">
                     <img src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/181_Java-512.png"
                         width="50px" height="50px" title="Java">
             </a>
         </div>
 
         <a href="cpp.html">
-            <div class="rectangle-1">
+            <div class="rectangle-1" title="C++">
                 <img src="cpp.png" width="50px" height="50px" title="C++">
         </a>
     </div>
 
     <a href="c.html">
-        <div class="rectangle-1 hot-glow">
+        <div class="rectangle-1 hot-glow" title="C">
             <img src="https://wallpapercave.com/wp/wp4521293.png" width="50px" height="50px" title="C">
 
     </a></div>
@@ -99,17 +99,17 @@
     </div>
     <div class="flex-col-1">
         <div class="flex-row flex">
-            <div class="rectangle-1-1"> <button onclick="showMessageBox()" title="Info"
+            <div class="rectangle-1-1" title="Info"> <button onclick="showMessageBox()" title="Info"
                     style="background-color: rgba(255, 255, 255, 0.092);"><i class="fas fa-info-circle"
                         ></i></button>
             </div>
-            <div class="rectangle-1-1"> <button onclick="openChatWindow()"
+            <div class="rectangle-1-1" title="Ask Chat Gpt"> <button onclick="openChatWindow()"
                     style="background-color: rgba(255, 255, 255, 0.092);"><i class="fas fa-comment"
                          title="Ask Chat Gpt"></i></button>
             </div>
 
 
-            <div class="rectangle-1-1"> <button onclick="window.location.href = 'login.html';" 
+            <div class="rectangle-1-1" title="Login"> <button onclick="window.location.href = 'login.html';" 
                     style="background-color: rgba(255, 255, 255, 0.092);"><i class="fas fa-user" title="Login "
                      ></i></button></div>
 
@@ -145,18 +145,18 @@
             </div>
         </div>
         <div class="flex-row-1">
-            <div class="rectangle" onclick="copyCode()"><i class="fas fa-copy" title="Copy/F8"
+            <div class="rectangle" onclick="copyCode()" title="Copy Code/F8"><i class="fas fa-copy" title="Copy/F8"
                     ></i></div>
 
-            <div class="rectangle" id="console-viewer-toggle" onclick="showConsoleMessagesAndFloat();">
+            <div class="rectangle" id="console-viewer-toggle" onclick="showConsoleMessagesAndFloat();" title="Show Console">
         <i class="fas fa-terminal" title="Console"></i><div class="console-viewer" id="console-viewer">
           <h2 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Console Viewer</h2>
           <div id="console-output"></div>
         </div>
       </div>
-            <div class="rectangle" onclick="saveCode()"><i class="fas fa-save" title="Save/F9" ></i>
+            <div class="rectangle" onclick="saveCode()" title="Save Code/F9"><i class="fas fa-save" title="Save/F9" ></i>
             </div>
-                 <div class="rectangle-i" onclick="clearCode()"><img src="https://icon-library.com/images/delete-icon-png/delete-icon-png-19.jpg" style="height: 25px; width: 25px;" title="Clear Code/F12"></div>
+                 <div class="rectangle-i" onclick="clearCode()" title="Clear Editor/F12"><img src="https://icon-library.com/images/delete-icon-png/delete-icon-png-19.jpg" style="height: 25px; width: 25px;" title="Clear Code/F12"></div>
         </div>
         <div class="textarea-container">
 
@@ -197,11 +197,11 @@ int main() {
         </script>
         <div class="flex-row-2">
 
-      <div class="rectangle-4" onclick="runCode()"><button id="demo"><i class="fas fa-play"></i></button>
+      <div class="rectangle-4" onclick="runCode()" title="Run Code/F5"><button id="demo"><i class="fas fa-play"></i></button>
       </div>
 
 
-            <div class="rectangle-5" onclick="uploadFile()"><i class="fas fa-folder-open" style="color: white;"
+            <div class="rectangle-5" onclick="uploadFile()" title="Upload File from Folder"><i class="fas fa-folder-open" style="color: white;"
                     title="Upload file from Folder" ></i></div>
             <div class="rectangle-5" onclick="theme()"><img alt="theme-icon" id="theme-icon" title="Switch to dark mode" src="moon.png" style="height: 30px; width: 30px;"></i></div>
           
