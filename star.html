@@ -241,21 +241,39 @@
       
       
       <script>
-        // Get all the star rating inputs
-        const ratingInputs = document.querySelectorAll('.rating input[type="radio"]');
-      
-        // Add an event listener to each input
-        ratingInputs.forEach(input => {
-          input.addEventListener('click', () => {
-            // Get the selected rating value
-            const selectedRating = input.id.split('-')[1];
-      
-            // Save the selected rating or send it to a server
-            // You can perform further actions with the selected rating here
-      
-            console.log('Selected rating:', selectedRating);
-          }); 
-        });
+        // Variable to keep track of whether the user has rated
+let hasRated = false;
+
+// Get all the star rating inputs
+const ratingInputs = document.querySelectorAll('.rating input[type="radio"]');
+
+// Add an event listener to each input
+ratingInputs.forEach(input => {
+  input.addEventListener('click', () => {
+    // Get the selected rating value
+    const selectedRating = input.id.split('-')[1];
+
+    // Save the selected rating or send it to a server
+    // You can perform further actions with the selected rating here
+
+    console.log('Selected rating:', selectedRating);
+
+    // Set the hasRated flag to true
+    hasRated = true;
+
+    // Close the window after a second if the user has rated
+    setTimeout(() => {
+      if (hasRated) {
+        window.close();
+      }
+    }, 1500);
+  });
+});
+
+function updateFeedbackMessage(message) {
+  document.getElementById('mesg').innerText = message;
+}
+
       </script>
       <script>
          function updateFeedbackMessage(message) {
