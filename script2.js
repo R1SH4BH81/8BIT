@@ -121,7 +121,6 @@ function openLoginWindow() {
     }
 
 
-
 var isRated = false;
 
 function openrating() {
@@ -129,12 +128,16 @@ function openrating() {
     Swal.fire({
       icon: 'info',
       title: 'Already Rated',
-      text: 'You have already rated this site.',
+      text: 'You have already rated.',
       confirmButtonColor: '#3085d6',
       confirmButtonText: 'OK',
     });
   } else {
-    var chatWindow = window.open("star.html", "_blank", "width=400,height=400");
+    var width = 350;
+    var height = 400;
+    var left = window.innerWidth / 2 - width / 2;
+    var top = window.innerHeight / 2 - height / 2;
+    var chatWindow = window.open("star.html", "_blank", "width=" + width + ",height=" + height + ",left=" + left + ",top=" + top);
     if (chatWindow) {
       console.log("ratact");
       isRated = true;
@@ -150,4 +153,3 @@ function openrating() {
     }
   }
 }
-
