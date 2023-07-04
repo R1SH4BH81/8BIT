@@ -313,13 +313,7 @@ root {
 }
 
 @import url("https://fonts.googleapis.com/css?family=Inter:400");
-.body{
-  background-image: url("https://wallpapercave.com/wp/wp3458039.jpg");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  border: none;
-}
+
 .desktop-1 {
   align-items: flex-start;
  
@@ -327,6 +321,11 @@ root {
 
   display: flex;
   gap: 16px;
+   background-image: url("https://wallpapercave.com/wp/wp3458039.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border: none;
 
   padding: 17px 26px;
 
@@ -359,7 +358,7 @@ root {
   align-items: flex-start;
   display: flex;
 }
-.dark-mode .body {
+.dark-mode .desktop-1 {
   background-image: url("https://static.vecteezy.com/system/resources/previews/008/749/872/non_2x/gradient-liquid-abstract-background-design-dark-blue-background-with-wavy-fluid-shapes-futuristic-design-vector.jpg")
   /* Change the background color to a darker shade */
   
@@ -1105,11 +1104,14 @@ a {
 
   .desktop-1 {
    display: flex;
+     background-image: url("https://wallpapercave.com/wp/wp3458039.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border: none;
   }
 
-.body{
-   background-image: url("https://th.bing.com/th/id/OIP.ezTcvZxUya5hipRNHxDFEwHaEK?pid=ImgDet&rs=1");
-  }
+
 
 
 
@@ -1200,7 +1202,7 @@ a {
     /* Equivalent to 405px */
   }
 
-  .body{
+  .desktop-1{
    background-image: url("https://th.bing.com/th/id/OIP.ezTcvZxUya5hipRNHxDFEwHaEK?pid=ImgDet&rs=1");
   }
 }
