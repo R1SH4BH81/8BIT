@@ -119,3 +119,35 @@ function openLoginWindow() {
         });
       }
     }
+
+
+
+var isRated = false;
+
+function openrating() {
+  if (isRated) {
+    Swal.fire({
+      icon: 'info',
+      title: 'Already Rated',
+      text: 'You have already rated this site.',
+      confirmButtonColor: '#3085d6',
+      confirmButtonText: 'OK',
+    });
+  } else {
+    var chatWindow = window.open("star.html", "_blank", "width=400,height=400");
+    if (chatWindow) {
+      console.log("ratact");
+      isRated = true;
+    } else {
+      console.log("Failed to open ratact");
+      Swal.fire({
+        icon: 'warning',
+        title: 'Attention',
+        text: 'Failed to open rating page.',
+        confirmButtonColor: '#3085d6',
+        confirmButtonText: 'OK',
+      });
+    }
+  }
+}
+
