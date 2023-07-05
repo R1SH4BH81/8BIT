@@ -64,16 +64,43 @@ function leader() {
 
 
 function reportError() {
-        // Email details
-        var recipient = 'rishabhmishra.81e@gmail.com';
-        var subject = 'Error Report';
-        var body = 'Please describe the error you encountered:';
+  Swal.fire({
+    title: 'Enter the error you encountered',
+    input: 'text',
+    inputAttributes: {
+      autocapitalize: 'off'
+    },
+    showCancelButton: true,
+    confirmButtonText: 'Submit',
+    cancelButtonText: 'Cancel',
+    showLoaderOnConfirm: true,
+    preConfirm: (name) => {
+      
+      if (!name) {
+        Swal.showValidationMessage('Please enter the error you encountered');
+      } else {
+        return name;
+      }
+    },
+  }).then((result) => {
+    if (result.isConfirmed) {
+      const error = result.value;
+      // Use the name variable here for further processing
+      Swal.fire({
+        icon: 'success',
+        title: 'Your report has been send to Devs',
+        text: 'You Reported: ' + error + '!',
+      });
   
-        // Create a mailto link
-        var mailtoLink = 'mailto:' + recipient + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+   
+      const fileContent = `Error: ${error}`;
+      //error reported by user is saved in error
+      
   
-        // Open the user's default email client
-        window.location.href = mailtoLink;
+     
+    }
+  });
+  
       }
     
       function openFacebookFeed() {
