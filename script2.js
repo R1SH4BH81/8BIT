@@ -61,7 +61,27 @@ function leader() {
   });
       }
 
+let fullscreen;
+  let fsEnter = document.getElementById('fullscr');
+  let iconElement = fsEnter.querySelector('i');
 
+  function toggleFullscreen() {
+    if (!fullscreen) {
+      fullscreen = true;
+      document.documentElement.requestFullscreen();
+      
+     
+    } else {
+      fullscreen = false;
+      document.exitFullscreen();
+      
+    }
+  }
+
+  fsEnter.addEventListener('click', function (e) {
+    e.preventDefault();
+    toggleFullscreen();
+  });
 
 function reportError() {
   Swal.fire({
