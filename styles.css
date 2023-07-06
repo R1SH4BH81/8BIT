@@ -17,7 +17,12 @@ root {
 .fa-warning{
     color: white;
   }
-
+.fa-desktop{
+  color: white;
+}
+.dark-mode .fa-desktop{
+  color :#1DA1F2;
+}
 
 @keyframes hot-glow-animation {
   0% {
