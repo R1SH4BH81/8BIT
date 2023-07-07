@@ -753,7 +753,7 @@ root {
   padding: 20px;
   border-radius: 10px;
   color: #ffffff;
-  text-align: center;
+  text-align: left;
   font-family: 'Arial', sans-serif;
 }
 
@@ -761,6 +761,9 @@ root {
   font-size: 32px;
   margin-bottom: 20px;
   color: lime;
+  font-family: 'Bangers', cursive;
+  
+  text-align: center;
 }
 
 .message-box p {
