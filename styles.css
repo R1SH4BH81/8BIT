@@ -786,8 +786,8 @@ root {
 }
 
 .close-btn:hover {
-  background-color: #2c1dff5c;
-  border: 2px solid lime;
+  background-color: #00000028;
+  border: 3px solid lime;
 }
 
 .rectangle {
