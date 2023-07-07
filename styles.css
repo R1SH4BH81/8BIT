@@ -27,6 +27,13 @@ root {
 .dark-mode .rectangle .hover-text{
   color: lime;
 }
+.rectangle:hover .icon {
+  display: none;
+}
+
+.rectangle:hover .hover-text {
+  display: block;
+}
 .rectangle img {
   width: 100%;
   height: 100%;
