@@ -1063,6 +1063,7 @@ box-shadow: 0 0 17px 12px rgb(255, 157, 0);
   flex-wrap: wrap;
   justify-content: flex-start;
   gap: 5px;
+  margin-top: 200px;
   margin-left: 75px;
 }
 
@@ -1099,7 +1100,8 @@ a {
 
 
 @media (min-width: 768px) and (max-width: 1024px) {
-
+.overlap-group{
+  margin-left:45px;}
 .flex-row{
     margin-top: 5px;
     margin-bottom: 2px;
