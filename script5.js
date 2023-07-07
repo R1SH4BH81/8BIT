@@ -120,7 +120,7 @@ function uploadFile() {
   var timeoutId = setTimeout(function() {
     folderIcon.classList.remove("fas", "fa-folder-open");
     folderIcon.classList.add("fa-solid", "fa-folder");
-  }, 5000);
+  }, 10000);
 
   input.onchange = function (event) {
     clearTimeout(timeoutId);
