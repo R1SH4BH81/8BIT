@@ -52,6 +52,11 @@ root {
 .dark-mode .fa-desktop{
   color :#1DA1F2;
 }
+#console-output{
+  font-size: 18px;
+  text-align: left;
+  
+}
 
 @keyframes hot-glow-animation {
   0% {
