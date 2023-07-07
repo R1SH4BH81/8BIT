@@ -109,11 +109,22 @@ function clearCode() {
   document.body.appendChild(notificationClone);
 }
 
+
 function uploadFile() {
   var input = document.createElement('input');
   input.type = 'file';
+  var folderIcon = document.getElementById("folderIcon");
+  folderIcon.classList.remove("fa-solid", "fa-folder");
+  folderIcon.classList.add("fas", "fa-folder-open");
+
+  var timeoutId = setTimeout(function() {
+    folderIcon.classList.remove("fas", "fa-folder-open");
+    folderIcon.classList.add("fa-solid", "fa-folder");
+  }, 5000);
 
   input.onchange = function (event) {
+    clearTimeout(timeoutId);
+
     var file = event.target.files[0];
     console.log('Uploading file:', file);
 
@@ -126,7 +137,9 @@ function uploadFile() {
     reader.onload = function (e) {
       var fileContent = e.target.result;
       editor.setValue(fileContent);
-      console.log('File content:', fileContent);
+
+      folderIcon.classList.remove("fas", "fa-folder-open");
+      folderIcon.classList.add("fa-solid", "fa-folder");
     };
 
     reader.readAsText(file);
@@ -134,6 +147,7 @@ function uploadFile() {
 
   input.click();
 }
+
 
 function runCode() {
   
