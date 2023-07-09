@@ -75,13 +75,13 @@ root {
 
 @keyframes hot-glow-animation-dark {
   0% {
-      box-shadow: 0 0 2px 5px rgba(0, 0, 0, 0);
+      box-shadow: 0 0 10px 5px rgba(0, 255, 170, 0.8);
   }
   50% {
-      box-shadow: 0 0 2px 5px lime;
+      box-shadow: 0 0 10px 5px rgba(0, 255, 170, 0.8);
   }
   100% {
-      box-shadow: 0 1 2px 5px lime;
+      box-shadow: 0 1 10px 5px rgba(0, 255, 170, 0.8);
   }
 }
 .rectangle-f {
@@ -811,7 +811,8 @@ body .cybr-btn + .cybr-btn {
   margin-right: -10px;
   /* Equivalent to 1125px */
 }
-
+#editor{
+  box-shadow: 0 0 10px rgba(0, 255, 170, 0.8);}
 .rectangle-3 {
 
   border-radius: 1.5625rem;
@@ -821,7 +822,7 @@ body .cybr-btn + .cybr-btn {
   margin-top: 1.125rem;
   /* Equivalent to 18px */
   width: 21.875rem;
-  border: 0.0625rem solid rgba(0, 0, 0, 0.8);
+ box-shadow: 0 0 10px rgba(0, 255, 170, 0.8);
 
   /* Equivalent to 350px */
   background-color: rgba(0, 0, 0, 0.316);
@@ -1866,7 +1867,7 @@ a {
     margin-left: 1.125rem;
     /* Equivalent to 18px */
     width: 25.5rem;
-    border: 0.0625rem solid rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 10px rgba(0, 255, 170, 0.8);
     /* Equivalent to 400px */
     height: 5rem;
     /* Equivalent to 75px */
