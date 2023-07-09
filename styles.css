@@ -811,8 +811,7 @@ body .cybr-btn + .cybr-btn {
   margin-right: -10px;
   /* Equivalent to 1125px */
 }
-#editor{
-  box-shadow: 0 0 10px rgba(0, 255, 170, 0.8);}
+
 .rectangle-3 {
 
   border-radius: 1.5625rem;
@@ -822,7 +821,6 @@ body .cybr-btn + .cybr-btn {
   margin-top: 1.125rem;
   /* Equivalent to 18px */
   width: 21.875rem;
- box-shadow: 0 0 10px rgba(0, 255, 170, 0.8);
 
   /* Equivalent to 350px */
   background-color: rgba(0, 0, 0, 0.316);
