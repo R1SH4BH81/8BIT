@@ -852,7 +852,7 @@ body .cybr-btn + .cybr-btn {
   align-items: center;
   transition: box-shadow 0.6s ease-in-out;
   background-color: rgba(0, 0, 0, 0.226);
-  border: 0.0625rem solid rgba(255, 255, 255, 0.589);
+ box-shadow: 0 0 10px rgba(0, 255, 170, 0.8);
 }
 
 .symbol-container {
@@ -994,7 +994,7 @@ body .cybr-btn + .cybr-btn {
   align-items: center;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.197);
-  border: 1px solid rgba(0, 0, 0, 0.38);
+  box-shadow: 0 0 10px rgba(0, 255, 170, 0.8);
   /* Equivalent to 1px */
 }
 
@@ -1043,6 +1043,7 @@ body .cybr-btn + .cybr-btn {
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 0 0 10px rgba(0, 255, 170, 0.8);
   background-color: rgba(0, 0, 0, 0.197);
   
 }
@@ -1061,7 +1062,7 @@ body .cybr-btn + .cybr-btn {
   align-items: center;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.197);
-  border: 0.0625rem solid rgba(255, 251, 251, 0.589);
+ box-shadow: 0 0 10px rgba(0, 255, 170, 0.8);
 }
 
 .rectangle-2 {
