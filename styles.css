@@ -57,6 +57,18 @@ root {
   text-align: left;
   
 }
+#outputTextarea::-webkit-scrollbar {
+  width: 15px;
+}
+#outputTextarea::-webkit-scrollbar-thumb {
+  background-color: #ff2d55;
+  border-radius: 33px; 
+  background-clip: padding-box;
+}
+
+#outputTextarea::-webkit-scrollbar-thumb:hover {
+  background-color: #ff4747;
+}
 
 @keyframes hot-glow-animation {
   0% {
