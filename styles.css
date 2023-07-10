@@ -353,6 +353,7 @@ body .cybr-btn + .cybr-btn {
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.197);
   border: 0.0925rem solid rgba(255, 251, 251, 0.589);
+  box-shadow: 0 0 10px rgba(0, 255, 170, 0.8);
   /* Equivalent to 1px */
 }
 .rectangle-m {
@@ -1292,7 +1293,7 @@ a {
 .custom-textarea {
   background-color: rgba(255, 255, 255, 0);
   resize: none;
-  margin-top: 30px;  
+  margin-top: 470px;  
   border-color: rgba(255, 255, 255, 0);
 }
 
@@ -1317,7 +1318,7 @@ a {
   }
   .custom-textarea{
     height: 10px;
-    width: 350px;
+    width: 353px;
    
   }
   #editor{
@@ -1425,7 +1426,7 @@ a {
   }
 
 .custom-textarea{
-  width: 650px;
+  width: 653px;
 }
   .flex-col {
     flex-direction: column;
@@ -1525,7 +1526,7 @@ a {
   }
   .custom-textarea{
     height: 10px;
-    width: 650px;
+    width: 653px;
    
   }
 
@@ -1625,7 +1626,7 @@ a {
   }
   .custom-textarea{
     height: 10px;
-    width: 650px;
+    width: 653px;
    
   }
 
@@ -1725,7 +1726,7 @@ a {
   }
   .custom-textarea{
     height: 10px;
-    width: 650px;
+    width: 653px;
    
   }
 
@@ -1824,7 +1825,7 @@ a {
   }
   .custom-textarea{
     height: 10px;
-    width: 750px;
+    width: 753px;
    
   }
   #editor{
