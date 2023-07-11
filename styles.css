@@ -1043,11 +1043,36 @@ body .cybr-btn + .cybr-btn {
   margin-left: 1.125rem;
   /* Equivalent to 18px */
   width: 100px;
+  transition: 0.5s ease;
   /* Equivalent to 700px */
   background-image: rgba(0, 0, 0, 0.207);
   border: 0.0925rem solid rgba(255, 255, 255, 0.9);
 }
+.rectangle-6:hover {
+  background: none;
+  border: 2px solid rgb(255, 56, 255);
+  transform: translateY(-10%);
+  box-shadow: 0px 0px 20px rgb(255, 0, 255),
+              inset 0px 0px 20px rgb(255, 0, 255);
+  color: rgb(255, 56, 255);
+  text-shadow: 0px 0px 5px rgb(255, 0, 255);
+}
+.rectangle-6::before {
+  content: '';
+  height: 20px;
+  width: 100%;
+  position: absolute;
+  background-color: rgb(255, 0, 255);
+  bottom: -50px;
+  transform: perspective(5rem) rotateX(50deg);
+  filter: blur(20px);
+  display: none;
+  transition: .5s ease;
+}
 
+.rectangle-6:hover:before {
+  display: block;
+}
 
 .rectangle-4 {
   background-color: var(--white);
