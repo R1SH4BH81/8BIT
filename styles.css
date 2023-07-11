@@ -1051,7 +1051,7 @@ body .cybr-btn + .cybr-btn {
 .rectangle-6:hover {
   background: none;
   border: 2px solid rgb(255, 56, 255);
-  transform: translateY(-10%);
+  transform: translateY(-5%);
   box-shadow: 0px 0px 20px rgb(255, 0, 255),
               inset 0px 0px 20px rgb(255, 0, 255);
   color: rgb(255, 56, 255);
