@@ -392,6 +392,13 @@ body .cybr-btn + .cybr-btn {
   border: 0.0925rem solid rgba(255, 251, 251, 0.633);
   /* Equivalent to 1px */
 }
+.rectangle-1-1:hover,
+.rectangle:hover,
+.rectangle-i:hover,
+.rectangle-5:hover{
+  border-radius:17px;
+ 
+ }
 .fa-star{
   color : white;
 }
