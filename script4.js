@@ -25,6 +25,10 @@ function theme() {
   }
 }
 
+// Set dark mode by default
+document.body.classList.add('dark-mode');
+
+
 document.addEventListener('keydown', function(event) {
   // Check if Alt + T is pressed
   if (event.altKey && event.key === 'q') {
