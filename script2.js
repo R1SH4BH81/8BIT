@@ -1,5 +1,5 @@
 function openChatWindow() {
-  var chatWindow = window.open("https://chat.openai.com/", "_blank", "width=400,height=600");
+  var chatWindow = window.open("https://chat.openai.com/", "_blank", "width=500,height=600");
   if (chatWindow) {
     console.log("Chat Gpt opened");
   } else {
@@ -63,7 +63,7 @@ function leader() {
 
 let fullscreen;
   let fsEnter = document.getElementById('fullscr');
-  let iconElement = fsEnter.querySelector('i');
+  
 
   function toggleFullscreen() {
     if (!fullscreen) {
@@ -152,7 +152,7 @@ function reportError() {
       window.open(twitterUrl, 'twitter', 'width=800,height=800');
     }
 function openLoginWindow() {
-      var chatWindow = window.open("login.html", "_blank", "width=500,height=480");
+      var chatWindow = window.open("login.html", "_blank");
       if (chatWindow) {
         console.log("Login opened");
       } else {
