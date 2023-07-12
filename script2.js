@@ -164,7 +164,7 @@ function isValidEmail(email) {
       window.open(twitterUrl, 'twitter', 'width=800,height=800');
     }
 function openLoginWindow() {
-      var chatWindow = window.open("login.html", "_blank", "width=100%,height=700");
+      var chatWindow = window.open("login.html", "_blank", "width=1400,height=700");
       if (chatWindow) {
         console.log("Login opened");
       } else {
