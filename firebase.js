@@ -61,3 +61,34 @@ loginForm.addEventListener("submit", function(event) {
             errorMsg.textContent = "Error: " + errorCode + " - " + errorMessage;
         });
 });
+firebase.auth().onAuthStateChanged(function(user) {
+    if (user) {
+      var user_email = user.email;
+      Swal.fire({
+        icon: 'info',
+        title: 'You are already logged in',
+        text: 'Email: ' + user_email,
+        confirmButtonColor: '#3085d6',
+        confirmButtonText: 'OK'
+      }).then((result) => {
+        if (result.isConfirmed) {
+          window.close();
+        }
+      });
+    }
+  });
+
+  function logout() {
+    firebase.auth().signOut().then(function() {
+      Swal.fire({
+        icon: 'info',
+        title: 'Logged Out',
+        text: 'You have been successfully logged out.',
+        confirmButtonColor: '#3085d6',
+        confirmButtonText: 'OK'
+      });
+    }).catch(function(error) {
+      console.log("Error occurred during sign out:", error);
+    });
+  }
+  
