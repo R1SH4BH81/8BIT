@@ -188,7 +188,7 @@ body {
 }
 
 #submit,
-#guest {
+#guest, #logoutButton {
   border: none;
   margin: 20px;
   padding: 10px 10px;
@@ -657,7 +657,15 @@ body.off::after {
   height: 100%;
   border: none
 }
-
+#logoutButton {
+      margin: 0 auto;
+      display: inline-block; /* Display as inline block */
+      vertical-align: middle; /* Center align the logout button */
+    }
+#messageContainer {
+      font-size: 12px;
+      font-style: italic;
+    }
 .container.off>.screen {
   -webkit-animation: turn-off .55s cubic-bezier(.23, 1, .32, 1);
   animation: turn-off .55s cubic-bezier(.23, 1, .32, 1);
@@ -677,7 +685,9 @@ body.off::after {
 <div class="box">
   <div class="container on">
     <div class="screen">
+      
       <h3 class="title">
+
         CONNECTION ESTABLISHED
       </h3>
   <div class="box--outer">
@@ -685,6 +695,7 @@ body.off::after {
       <div class="box--inner">
         <div class="content">
         <div class="holder">
+          <br><br>
           <b>Welcome to 8BIT</b> — the high-performance online code editor with&nbsp;a&nbsp;soul. Please enter your user credentials.
              <br> 
 
@@ -697,20 +708,24 @@ body.off::after {
        <br>Login : <input type="text" name="email" id="email" placeholder=" Enter your Email" required="required">
         
        
-     Password : <input type="password" name="password" id="password" placeholder="Password"  required="required" placeholder="Password" data-error="" maxlength="32" autocomplete="new-password" autofocus="true"> <div id="messageContainer"></div>
+     Password : <input type="password" name="password" id="password" placeholder="Password"  required="required" placeholder="Password" data-error="" maxlength="32" autocomplete="new-password" autofocus="true"><div id="messageContainer"></div>
         <div id="check">
           <input type="checkbox" id="remember">
+          
           <label for="remember">Remember me</label>
         </div>
         
             <div class="row"></div>
-            <input type="submit" value="[Login]" id="login" class="active">
+            <input type="submit" value="[LOGIN]" id="login" class="active">
+            
             <button id="guest" onclick="window.close()">[Guest]</button>
+            
             <div id="errorMsg"></div>
-             <button id="logoutButton" style="display: none;">[Logout]</button>
+        
+            <button id="logoutButton" style="display: none;">[Logout]</button>
             <p id="capsLockMessage" style="color: red; display: none;">Caps Lock is ON <i class="fas fa-exclamation-triangle warning-icon" ></i></p>
-            <p>Not a user? <a href="signup.html" id="signupLink">Signup</a></p>
-          </div>
+            <p id="signupParagraph">Not a user? <a href="signup.html" id="signupLink">Signup</a></p>
+          </div><br>
 
         </div>
       </form>
@@ -719,6 +734,12 @@ body.off::after {
 </div>
 <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.1.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.1.1/firebase-auth.js"></script>
+<script src="firebase-config.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-auth.js"></script>
+
 <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
 <script src="firebase.js"></script>
 <script>
@@ -731,6 +752,7 @@ body.off::after {
     }
   });
 </script>
+
 </body>
 </html>
 
