@@ -697,7 +697,9 @@ body.off::after {
         <div class="holder">
           <br><br>
           <b>Welcome to 8BIT</b> — the high-performance online code editor with&nbsp;a&nbsp;soul. Please enter your user credentials.
-             <br> 
+             <br> <br>
+           <div id="messageContainer"></div>
+            <button id="logoutButton" style="display: none;">[Logout]</button>
 
 
           <div class="row">
@@ -708,7 +710,7 @@ body.off::after {
        <br>Login : <input type="text" name="email" id="email" placeholder=" Enter your Email" required="required">
         
        
-     Password : <input type="password" name="password" id="password" placeholder="Password"  required="required" placeholder="Password" data-error="" maxlength="32" autocomplete="new-password" autofocus="true"><div id="messageContainer"></div>
+     Password : <input type="password" name="password" id="password" placeholder="Password"  required="required" placeholder="Password" data-error="" maxlength="32" autocomplete="new-password" autofocus="true">
         <div id="check">
           <input type="checkbox" id="remember">
           
@@ -721,8 +723,7 @@ body.off::after {
             <button id="guest" onclick="window.close()">[Guest]</button>
             
             <div id="errorMsg"></div>
-        
-            <button id="logoutButton" style="display: none;">[Logout]</button>
+       
             <p id="capsLockMessage" style="color: red; display: none;">Caps Lock is ON <i class="fas fa-exclamation-triangle warning-icon" ></i></p>
             <p id="signupParagraph">Not a user? <a href="signup.html" id="signupLink">Signup</a></p>
           </div><br>
