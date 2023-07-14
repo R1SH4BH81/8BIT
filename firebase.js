@@ -95,6 +95,11 @@ firebase.auth().onAuthStateChanged(function(user) {
           signupParagraph.style.display = 'none';
            var rememberContainer = document.getElementById('check');
           rememberContainer.style.display = 'none';
+         
+
+          // Hide the login form
+          var loginForm = document.getElementById('loginForm');
+          loginForm.style.display = 'none';
         }
       }
     });
