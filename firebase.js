@@ -66,7 +66,7 @@ firebase.auth().onAuthStateChanged(function(user) {
       var user_email = user.email;
       Swal.fire({
         icon: 'info',
-        title: 'You are already logged in',
+        title: 'Logged in as',
         text: 'Email: ' + user_email,
         confirmButtonColor: '#3085d6',
         confirmButtonText: 'OK'
