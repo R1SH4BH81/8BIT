@@ -697,7 +697,7 @@ body.off::after {
        <br>Login : <input type="text" name="email" id="email" placeholder=" Enter your Email" required="required">
         
        
-     Password : <input type="password" name="password" id="password" placeholder="Password"  required="required" placeholder="Password" data-error="" maxlength="32" autocomplete="new-password" autofocus="true">
+     Password : <input type="password" name="password" id="password" placeholder="Password"  required="required" placeholder="Password" data-error="" maxlength="32" autocomplete="new-password" autofocus="true"> <div id="messageContainer"></div>
         <div id="check">
           <input type="checkbox" id="remember">
           <label for="remember">Remember me</label>
@@ -707,6 +707,7 @@ body.off::after {
             <input type="submit" value="[Login]" id="login" class="active">
             <button id="guest" onclick="window.close()">[Guest]</button>
             <div id="errorMsg"></div>
+             <button id="logoutButton" style="display: none;">[Logout]</button>
             <p id="capsLockMessage" style="color: red; display: none;">Caps Lock is ON <i class="fas fa-exclamation-triangle warning-icon" ></i></p>
             <p>Not a user? <a href="signup.html" id="signupLink">Signup</a></p>
           </div>
