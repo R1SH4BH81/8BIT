@@ -69,10 +69,14 @@ firebase.auth().onAuthStateChanged(function(user) {
         title: 'Logged in as',
         text: 'Email: ' + user_email,
         confirmButtonColor: '#3085d6',
-        confirmButtonText: 'OK'
+        showCancelButton: false, // Hide the cancel button
+        confirmButtonText: 'Logout',
+        showCloseButton: true, // Show the close button
+        closeButtonAriaLabel: 'OK' // Change the close button label to "OK"
       }).then((result) => {
         if (result.isConfirmed) {
-          window.close();
+          logout(); 
+          window.close();// Call the logout function when the "Logout" button is clicked
         }
       });
     }
