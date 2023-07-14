@@ -64,23 +64,31 @@ loginForm.addEventListener("submit", function(event) {
 firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
       var user_email = user.email;
-      Swal.fire({
-        icon: 'info',
-        title: 'Logged in as',
-        text: 'Email: ' + user_email,
-        confirmButtonColor: '#3085d6',
-        showCancelButton: false, // Hide the cancel button
-        confirmButtonText: 'Logout',
-        showCloseButton: true, // Show the close button
-        closeButtonAriaLabel: 'OK' // Change the close button label to "OK"
-      }).then((result) => {
-        if (result.isConfirmed) {
-          logout(); 
-          window.close();// Call the logout function when the "Logout" button is clicked
-        }
-      });
+      var isNewUser = user.metadata.creationTime === user.metadata.lastSignInTime;
+
+      if (!isNewUser) {
+        var messageContainer = document.getElementById('messageContainer');
+        messageContainer.innerHTML = `
+          <div>
+            <h1>Logged in as  ${user_email}</h1>
+           
+          </div>
+        `;
+
+        var logoutButton = document.getElementById('logoutButton');
+        logoutButton.style.display = 'inline-block'; // Show the logout button
+
+        logoutButton.addEventListener('click', function() {
+          logout(); // Call the logout function when the logout button is clicked
+        });
+
+        // Hide the login button
+        var loginButton = document.getElementById('login');
+        loginButton.style.display = 'none';
+      }
     }
   });
+  
 
   function logout() {
     firebase.auth().signOut().then(function() {
