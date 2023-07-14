@@ -70,24 +70,32 @@ firebase.auth().onAuthStateChanged(function(user) {
         var messageContainer = document.getElementById('messageContainer');
         messageContainer.innerHTML = `
           <div>
-            <h1>Logged in as  ${user_email}</h1>
+            <h1>Logged in as ${user_email}</h1>
            
           </div>
         `;
 
         var logoutButton = document.getElementById('logoutButton');
-        logoutButton.style.display = 'inline-block'; // Show the logout button
+          logoutButton.style.display = 'inline-block'; // Show the logout button
 
-        logoutButton.addEventListener('click', function() {
-          logout(); // Call the logout function when the logout button is clicked
-        });
+          logoutButton.addEventListener('click', function() {
+            logout(); // Call the logout function when the logout button is clicked
+          });
 
-        // Hide the login button
-        var loginButton = document.getElementById('login');
-        loginButton.style.display = 'none';
+          // Hide the login button
+          var loginButton = document.getElementById('login');
+          loginButton.style.display = 'none';
+
+          // Hide the guest button
+          var guestButton = document.getElementById('guest');
+          guestButton.style.display = 'none';
+
+          // Hide the "Not a user?" signup link
+          var signupParagraph = document.getElementById('signupParagraph');
+          signupParagraph.style.display = 'none';
+        }
       }
-    }
-  });
+    });
   
 
   function logout() {
