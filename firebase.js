@@ -93,6 +93,8 @@ firebase.auth().onAuthStateChanged(function(user) {
           // Hide the "Not a user?" signup link
           var signupParagraph = document.getElementById('signupParagraph');
           signupParagraph.style.display = 'none';
+           var rememberContainer = document.getElementById('check');
+          rememberContainer.style.display = 'none';
         }
       }
     });
