@@ -50,7 +50,8 @@ loginForm.addEventListener("submit", function(event) {
                 confirmButtonText: 'OK'
             }).then((result) => {
                 if (result.isConfirmed) {
-                    window.close();
+                    window.open('', '_self', '');
+                    window.close(); 
                 }
             });
         })
@@ -91,17 +92,24 @@ firebase.auth().onAuthStateChanged(function(user) {
     });
   
 
-  function logout() {
-    firebase.auth().signOut().then(function() {
-      Swal.fire({
-        icon: 'info',
-        title: 'Logged Out',
-        text: 'You have been successfully logged out.',
-        confirmButtonColor: '#3085d6',
-        confirmButtonText: 'OK'
+ function logout() {
+      firebase.auth().signOut().then(function() {
+        Swal.fire({
+          icon: 'info',
+          title: 'Logged Out',
+          text: 'You have been successfully logged out.',
+          confirmButtonColor: '#3085d6',
+          confirmButtonText: 'OK'
+        }).then(function(result) {
+          if (result.isConfirmed) {
+            window.location.reload(); 
+            window.open('', '_self', '');
+            window.close(); 
+          }
+        });
+      }).catch(function(error) {
+        console.log("Error occurred during sign out:", error);
       });
-    }).catch(function(error) {
-      console.log("Error occurred during sign out:", error);
-    });
-  }
+    }
+    
   
