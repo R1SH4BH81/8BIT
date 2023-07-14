@@ -82,24 +82,10 @@ firebase.auth().onAuthStateChanged(function(user) {
             logout(); // Call the logout function when the logout button is clicked
           });
 
-          // Hide the login button
-          var loginButton = document.getElementById('login');
-          loginButton.style.display = 'none';
-
-          // Hide the guest button
-          var guestButton = document.getElementById('guest');
-          guestButton.style.display = 'none';
-
-          // Hide the "Not a user?" signup link
-          var signupParagraph = document.getElementById('signupParagraph');
-          signupParagraph.style.display = 'none';
-           var rememberContainer = document.getElementById('check');
-          rememberContainer.style.display = 'none';
-         
-
-          // Hide the login form
           var loginForm = document.getElementById('loginForm');
           loginForm.style.display = 'none';
+
+          
         }
       }
     });
