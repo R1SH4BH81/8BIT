@@ -82,59 +82,72 @@ let fullscreen;
     e.preventDefault();
     toggleFullscreen();
   });
-function reportError() {
-  Swal.fire({
-    title: 'Enter the error you encountered',
-    html: '<input id="error-input" class="swal2-input" style="border: 2px solid #d7001e;" placeholder="Error description">' +
-          '<input id="email-input" class="swal2-input" style="border: 2px solid #d7001e;" placeholder="Your email address">',
-    showCancelButton: true,
-    confirmButtonText: 'Submit',
-    cancelButtonText: 'Cancel',
-    showLoaderOnConfirm: true,
-    preConfirm: () => {
-      const error = document.getElementById('error-input').value;
-      const email = document.getElementById('email-input').value;
-      
-      if (!error) {
-        Swal.showValidationMessage('Please enter the error you encountered');
-      } else if (!email) {
-        Swal.showValidationMessage('Please enter your email address');
-      } else if (!isValidEmail(email)) {
-        Swal.showValidationMessage('Please enter a valid email address');
-      } else {
-        return { error, email };
+ function reportError() {
+    // Check if the user is already logged in
+    var user = firebase.auth().currentUser;
+    
+    Swal.fire({
+      title: 'Enter the error you encountered',
+      html: '<input id="error-input" class="swal2-input" style="border: 2px solid aqua;" placeholder="Error description">' +
+            '<input id="email-input" class="swal2-input" style="border: 2px solid aqua;" ' +
+            (user ? 'value="' + user.email + '"' : 'placeholder="Your email address"') + '>',
+      showCancelButton: true,
+      confirmButtonText: 'Submit',
+      cancelButtonText: 'Cancel',
+      showLoaderOnConfirm: true,
+      preConfirm: () => {
+        const error = document.getElementById('error-input').value;
+        const email = document.getElementById('email-input').value;
+  
+        if (!error) {
+          Swal.showValidationMessage('Please enter the error you encountered');
+        } else if (!email) {
+          Swal.showValidationMessage('Please enter your email address');
+        } else if (!isValidEmail(email)) {
+          Swal.showValidationMessage('Please enter a valid email address');
+        } else {
+          return { error, email };
+        }
+      },
+      customClass: {
+        title: 'swal2-title',
+        htmlContainer: 'swal2-html-container',
+        confirmButton: 'swal2-confirm-button',
+        cancelButton: 'swal2-cancel-button',
+        validationMessage: 'swal2-validation-message',
+      },
+    }).then((result) => {
+      if (result.isConfirmed) {
+        const { error, email } = result.value;
+        // Use the error and email variables here for further processing
+  
+        Swal.fire({
+          icon: 'success',
+          title: 'Your report has been sent to the developers',
+          text: 'You reported: ' + error + '!',
+        });
+  
+        const fileContent = `Error: ${error}\nEmail: ${email}`;
+        // The error reported by the user is saved in the 'error' variable
+        // The email address provided by the user is saved in the 'email' variable
       }
-    },
-    customClass: {
-      title: 'swal2-title',
-      htmlContainer: 'swal2-html-container',
-      confirmButton: 'swal2-confirm-button',
-      cancelButton: 'swal2-cancel-button',
-      validationMessage: 'swal2-validation-message',
-    },
-  }).then((result) => {
-    if (result.isConfirmed) {
-      const { error, email } = result.value;
-      // Use the error and email variables here for further processing
-      
-      Swal.fire({
-        icon: 'success',
-        title: 'Your report has been sent to the developers',
-        text: 'You reported: ' + error + '!',
-      });
-      
-      const fileContent = `Error: ${error}\nEmail: ${email}`;
-      // The error reported by the user is saved in the 'error' variable
-      // The email address provided by the user is saved in the 'email' variable
-    }
-  });
-}
-
-function isValidEmail(email) {
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  return emailRegex.test(email);
-}
-
+    });
+  }
+   function isValidEmail(email) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  }
+  
+  function isValidEmail(email) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  }
+  
+  
+  function isValidEmail(email) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  }
       function openFacebookFeed() {
         // Pre-written text
         var text = 'Check out this awesome online compiler " 8BIT " at compiler81.netlify.app #AwesomeWebsite';
