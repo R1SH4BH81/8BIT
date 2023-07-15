@@ -8,49 +8,69 @@ var sweetAlertStylesheet = document.createElement('link');
 sweetAlertStylesheet.rel = 'stylesheet';
 sweetAlertStylesheet.href = 'https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.css';
 document.head.appendChild(sweetAlertStylesheet);
+// Set the session expiration time (in minutes)
+const sessionExpiration = 25;
 
+// Function to check if the session has expired
 function checkSessionExpiration() {
-  var sessionTimeout = 1 * 60 * 1000; //30 mins in milisecs
-  var lastActivity = parseInt(localStorage.getItem('lastActivity'));
-  var currentTime = Date.now();
+  // Get the session start time from local storage
+  const sessionStartTime = localStorage.getItem('sessionStartTime');
 
-  if (currentTime - lastActivity > sessionTimeout) {
-    // Session has expired
-    if (!localStorage.getItem('sessionExpired')) {
-      // Display SweetAlert notification only if it hasn't been shown before
-      Swal.fire({
-        icon: 'error',
-        title: 'Session Expired',
-        text: 'Your session has expired. Please log in again.',
-        showCancelButton: false,
-        showConfirmButton: true,
-        confirmButtonText: 'OK',
-        allowOutsideClick: false,
-        allowEscapeKey: false,
-        allowEnterKey: false,
-        willClose: function() {
-          // Set sessionExpired flag in local storage to indicate the notification has been shown
-          localStorage.setItem('sessionExpired', 'true');
-          // Redirect the user to the login page
-          window.location.href = 'login.html';
-        }
-      });
+  if (sessionStartTime) {
+    const currentTime = new Date().getTime();
+    const elapsedTime = (currentTime - sessionStartTime) / (1000 * 60); // Elapsed time in minutes
+
+    if (elapsedTime >= sessionExpiration) {
+      // Session has expired, perform logout or any other required action
+      logoutS();
+      showSessionExpiredMessage();
+      
     }
-  } else {
-    // Session is still active
-    // Update the last activity timestamp
-    localStorage.setItem('lastActivity', currentTime.toString());
   }
 }
+// Function to handle user logout
+function logoutS() {
+  firebase.auth().signOut()
+    .then(function() {
+      // Perform additional logout actions or redirect to another page
+      console.log('User logged out');
+      // Example: Redirect to the login page
+      
+    })
+    .catch(function(error) {
+      // Handle any errors that occur during logout
+      console.error('Logout error:', error);
+    });
+}
 
-// Call the checkSessionExpiration function when necessary
-// For example, you can call it on page load or at regular intervals using a timer
-window.addEventListener('load', function() {
-  // Set initial last activity timestamp if not already set
-  if (!localStorage.getItem('lastActivity')) {
-    localStorage.setItem('lastActivity', Date.now().toString());
-  }
+// Function to start the session timer
+function startSessionTimer() {
+  // Set the session start time in local storage
+  localStorage.setItem('sessionStartTime', new Date().getTime());
+}
 
-  // Call the checkSessionExpiration function periodically
-  setInterval(checkSessionExpiration, 1000); // Adjust the interval as needed
-});
+// Function to reset the session timer
+function resetSessionTimer() {
+  // Remove the session start time from local storage
+  localStorage.removeItem('sessionStartTime');
+
+  // Start the session timer again
+  startSessionTimer();
+}
+
+// Start the session timer when the page loads or is refreshed
+document.addEventListener('DOMContentLoaded', startSessionTimer);
+
+// Check the session expiration periodically
+setInterval(checkSessionExpiration, 1000 * 60); // Check every minute
+
+// Function to show a Swal message for session expiration
+function showSessionExpiredMessage() {
+  Swal.fire({
+    icon: 'info',
+    title: 'Session Expired',
+    text: 'Your session has expired. Please log in again.',
+    confirmButtonColor: '#3085d6',
+    confirmButtonText: 'OK'
+  });
+}
