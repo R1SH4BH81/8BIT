@@ -9,7 +9,7 @@ sweetAlertStylesheet.rel = 'stylesheet';
 sweetAlertStylesheet.href = 'https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.css';
 document.head.appendChild(sweetAlertStylesheet);
 // Set the session expiration time (in minutes)
-const sessionExpiration = 25;
+const sessionExpiration = 2;
 
 // Function to check if the session has expired
 function checkSessionExpiration() {
