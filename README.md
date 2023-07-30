@@ -1,6 +1,6 @@
 **8Bit Online Compiler**
 
-![Video](intro.mp4)
+
 
 
 ## Description
