@@ -1,6 +1,6 @@
 **8Bit Online Compiler**
 
-
+<img src="favicon-32x32.png">
 
 ## Description
 
