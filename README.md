@@ -1,6 +1,6 @@
 **8Bit Online Compiler**
 
-![8Bit Online Compiler](https://github.com/R1SH4BH81/8BIT/blob/main/logo.png)
+
 
 ## Description
 
