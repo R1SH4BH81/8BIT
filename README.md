@@ -1,6 +1,6 @@
 **8Bit Online Compiler**
 
-![8Bit Online Compiler](logo)
+![8Bit Online Compiler](logo.png)
 
 ## Description
 
