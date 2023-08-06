@@ -33,6 +33,45 @@ Welcome to 8Bit Online Compiler, a simple and user-friendly web-based compiler t
 
 6. To access your saved code snippets, click on the "Saved Codes" tab.
 
+## Structure
+```
+├── static
+│   ├── css
+│   │   ├── bootstrap.min.css
+│   │   └── styles.css
+│   ├── img
+│   └── script
+│       ├── animate.js
+│       ├── bootstrap.min.js
+│       ├── bs-init.js
+│       ├── c.js
+│       ├── c++.js
+│       ├── fire.js
+│       ├── firebase.js
+│       ├── java.js
+│       ├── python.js
+│       ├── script.js
+│       ├── script2.js
+│       ├── script3.js
+│       ├── script4.js
+│       ├── script5.js
+│       └── session.js
+├── templates
+│   ├── 404.html
+│   ├── admin.html
+│   ├── c.html
+│   ├── cpp.html
+│   ├── index.html
+│   ├── java.html
+│   ├── login.html
+│   ├── restricted.html
+│   ├── signup.html
+│   └── star.html
+├── app.py
+└── h.txt
+
+```
+
 ## Technologies Used
 
 - HTML
