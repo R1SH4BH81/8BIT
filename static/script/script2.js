@@ -51,16 +51,23 @@ function showMessageBox() {
 function hideMessageBox() {
           document.getElementById('overlay').style.display = 'none';
         }
-function leader() {
+  function blog() {
           Swal.fire({
-    icon: 'info',
-    title: 'Be Patient',
-    text: 'This Feature is Coming Soon....',
-    confirmButtonColor: '#3085d6',
-    confirmButtonText: 'OK',
-  });
-      }
-
+            title: '<i class="fa-brands fa-blogger-b"></i>',
+            text: 'Opening Blog Window',
+            showConfirmButton: false,
+          });
+        
+          // Set a timer to close the alert after 3 seconds
+          setTimeout(function() {
+            Swal.close();
+          }, 3000);
+        
+          // Open the redirected page in a new window with the specified size after 1.5 seconds
+          setTimeout(function() {
+            window.open('https://8bit81.blogspot.com/', '', 'width=700,height=800');
+          }, 1500);
+        }
 let fullscreen;
   let fsEnter = document.getElementById('fullscr');
   
