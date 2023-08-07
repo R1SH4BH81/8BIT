@@ -183,6 +183,15 @@ def compile_and_execute_java(code, input_data):
 @app.route('/login')
 def login():
     return render_template('login.html')
+@app.route('/signup')
+def signup():
+    return render_template('signup.html')
+@app.route('/restricted')
+def restricted():
+    return render_template('restricted.html')
+@app.errorhandler(404)
+def page_not_found(error):
+    return render_template('404.html'), 404
 
 # Add more routes and view functions for other HTML pages as needed
 
