@@ -721,7 +721,7 @@ body.off::after {
             <div class="row"></div>
             <input type="submit" value="[LOGIN]" id="login" class="active">
             
-            <button id="guest" onclick="window.close()">[Guest]</button>
+            <a href= '{{ url_for("index") }}'><button id="guest">[Guest]</button></a>
             
             <div id="errorMsg"></div>
        
