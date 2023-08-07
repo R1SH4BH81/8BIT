@@ -721,7 +721,10 @@ body.off::after {
             <div class="row"></div>
             <input type="submit" value="[LOGIN]" id="login" class="active">
             
-            <a href= '{{ url_for("index") }}'><button id="guest">[Guest]</button></a>
+        <a href="{{ url_for('index') }}">
+  <button id="guest">[Guest]</button>
+</a>
+
             
             <div id="errorMsg"></div>
        
@@ -754,6 +757,9 @@ body.off::after {
     }
   });
 </script>
+<a href="{{ url_for('index') }}">
+  <button id="guest">[Guest]</button>
+</a>
 
 </body>
 </html>
