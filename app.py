@@ -183,6 +183,9 @@ def compile_and_execute_java(code, input_data):
 @app.route('/login')
 def login():
     return render_template('login.html')
+@app.route('/admin')
+def admin():
+    return render_template('admin.html')
 @app.route('/signup')
 def signup():
     return render_template('signup.html')
