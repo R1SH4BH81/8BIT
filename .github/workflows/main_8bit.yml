@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: '8bit'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_B6434FDD4DDE4A4DAE94501C91E89C8B }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_61D7460F6BAC47F9979C58EDCB7A89FD }}
