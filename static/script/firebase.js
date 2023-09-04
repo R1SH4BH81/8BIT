@@ -50,8 +50,8 @@ loginForm.addEventListener("submit", function(event) {
                 confirmButtonText: 'OK'
             }).then((result) => {
                 if (result.isConfirmed) {
-                    window.open('', '_self', '');
-                    window.close(); 
+                     window.location.href = '/index';
+                   
                 }
             });
         })
@@ -102,9 +102,7 @@ firebase.auth().onAuthStateChanged(function(user) {
           confirmButtonText: 'OK'
         }).then(function(result) {
           if (result.isConfirmed) {
-            window.location.reload(); 
-            window.open('', '_self', '');
-            window.close(); 
+            window.location.href = '/index';
           }
         });
       }).catch(function(error) {
